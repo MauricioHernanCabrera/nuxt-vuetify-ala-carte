@@ -9,7 +9,7 @@ import { VCard } from 'vuetify'
 
 export default {
   components: {
-    VCard,
+    VCard
   }
 }
 </script>
