@@ -3,7 +3,6 @@ const pkg = require('./package')
 const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
-  transpile: [/^vuetify/],
   mode: 'universal',
   /*
   ** Headers of the page
@@ -43,6 +42,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    transpile: [/^vuetify/],
     babel: {
       plugins: [
         ['transform-imports', {
